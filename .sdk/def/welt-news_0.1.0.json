@@ -1,0 +1,124 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Welt News API",
+    "description": "The Welt News API provides access to live news articles, comments, live ticker updates, videos, and streams from welt.de. Users can retrieve the latest news across various topics including politics, economy, culture, and sports.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/welt"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.welt.de/api",
+      "description": "Welt News API production server"
+    }
+  ],
+  "paths": {
+    "/articles/home": {
+      "get": {
+        "summary": "Get home articles",
+        "description": "Retrieves the latest breaking news articles from the home page of welt.de. Returns articles covering politics, economy, culture, sports, and other topics.",
+        "operationId": "getHomeArticles",
+        "tags": [
+          "Articles"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with news articles",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "articles": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the article"
+                          },
+                          "title": {
+                            "type": "string",
+                            "description": "Article headline"
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": "Brief summary of the article"
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "URL to the full article"
+                          },
+                          "category": {
+                            "type": "string",
+                            "description": "Article category (e.g., politics, economy, culture, sports)"
+                          },
+                          "publishedAt": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Publication timestamp"
+                          },
+                          "imageUrl": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "URL to the article's main image"
+                          },
+                          "author": {
+                            "type": "string",
+                            "description": "Article author name"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Articles",
+      "description": "Operations related to news articles from welt.de"
+    }
+  ]
+}

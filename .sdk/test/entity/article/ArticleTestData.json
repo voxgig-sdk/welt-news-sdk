@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "article": {
+      "ARTICLE00": {
+        "author": "s50",
+        "category": "s51",
+        "description": "s52",
+        "id": "ARTICLE00",
+        "image_url": "s54",
+        "published_at": "s55",
+        "title": "s56",
+        "url": "s57"
+      },
+      "ARTICLE01": {
+        "author": "sa0",
+        "category": "sa1",
+        "description": "sa2",
+        "id": "ARTICLE01",
+        "image_url": "sa4",
+        "published_at": "sa5",
+        "title": "sa6",
+        "url": "sa7"
+      },
+      "ARTICLE02": {
+        "author": "sf0",
+        "category": "sf1",
+        "description": "sf2",
+        "id": "ARTICLE02",
+        "image_url": "sf4",
+        "published_at": "sf5",
+        "title": "sf6",
+        "url": "sf7"
+      }
+    }
+  },
+  "new": {
+    "article": {
+      "article_ref01": {
+        "author": "s140",
+        "category": "s141",
+        "description": "s142",
+        "image_url": "s144",
+        "published_at": "s145",
+        "title": "s146",
+        "url": "s147"
+      }
+    }
+  }
+}

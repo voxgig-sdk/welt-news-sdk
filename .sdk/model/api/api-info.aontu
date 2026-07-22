@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/welt"
+      }
+      description: "The Welt News API provides access to live news articles, comments, live ticker updates, videos, and streams from welt.de. Users can retrieve the latest news across various topics including politics, economy, culture, and sports."
+      servers: [
+        {
+          description: "Welt News API production server"
+          url: "https://www.welt.de/api"
+        }
+      ]
+      summary: "The Welt News API provides access to live news articles, comments, live ticker updates, videos, and streams from welt.de."
+      title: "Welt News API"
+      version: "1.0.0"
+      website: "https://welt.de"
+    }
+  }
+}
+
