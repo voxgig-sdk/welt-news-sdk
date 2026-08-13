@@ -11,8 +11,8 @@
 ---@field category? string
 ---@field description? string
 ---@field id? string
----@field image_url? string
----@field published_at? string
+---@field imageUrl? string
+---@field publishedAt? string
 ---@field title? string
 ---@field url? string
 
@@ -21,8 +21,8 @@
 ---@field category? string
 ---@field description? string
 ---@field id? string
----@field image_url? string
----@field published_at? string
+---@field imageUrl? string
+---@field publishedAt? string
 ---@field title? string
 ---@field url? string
 

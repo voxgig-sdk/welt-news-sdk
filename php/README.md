@@ -125,7 +125,8 @@ Create a mock client for unit testing — no server required:
 ```php
 $client = WeltNewsSDK::test();
 
-// Entity ops return the bare mock record (throws on error).
+// Entity ops return the ENTITY (throws on error);
+// call data_get() for the mock record.
 $article = $client->Article()->list();
 print_r($article);
 ```
@@ -224,7 +225,7 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return the bare result data (an `array` for single-entity
+Entity operations return the ENTITY (call data_get() for the record) (an `array` for single-entity
 ops, a `list` for `list`) and throw on error. Wrap calls in
 `try`/`catch` to handle failures.
 
@@ -250,8 +251,8 @@ On error, `ok` is `false` and `$err` contains the error value.
 | `category` |  |
 | `description` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
 | `title` |  |
 | `url` |  |
 
@@ -282,8 +283,8 @@ Create an instance: `$article = $client->Article();`
 | `category` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
 | `title` | `string` |  |
 | `url` | `string` |  |
 

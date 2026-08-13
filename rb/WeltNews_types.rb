@@ -22,10 +22,10 @@
 # @!attribute [rw] id
 #   @return [String, nil]
 #
-# @!attribute [rw] image_url
+# @!attribute [rw] imageUrl
 #   @return [String, nil]
 #
-# @!attribute [rw] published_at
+# @!attribute [rw] publishedAt
 #   @return [String, nil]
 #
 # @!attribute [rw] title
@@ -38,8 +38,8 @@ Article = Struct.new(
   :category,
   :description,
   :id,
-  :image_url,
-  :published_at,
+  :imageUrl,
+  :publishedAt,
   :title,
   :url,
   keyword_init: true
@@ -59,10 +59,10 @@ Article = Struct.new(
 # @!attribute [rw] id
 #   @return [String, nil]
 #
-# @!attribute [rw] image_url
+# @!attribute [rw] imageUrl
 #   @return [String, nil]
 #
-# @!attribute [rw] published_at
+# @!attribute [rw] publishedAt
 #   @return [String, nil]
 #
 # @!attribute [rw] title
@@ -75,8 +75,8 @@ ArticleListMatch = Struct.new(
   :category,
   :description,
   :id,
-  :image_url,
-  :published_at,
+  :imageUrl,
+  :publishedAt,
   :title,
   :url,
   keyword_init: true

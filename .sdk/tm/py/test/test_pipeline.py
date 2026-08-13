@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import WeltNewsSDK
-from core.error import WeltNewsError
-from core.result import WeltNewsResult
-from core.response import WeltNewsResponse
-from core.spec import WeltNewsSpec
-from feature.base_feature import WeltNewsBaseFeature
+from projectname_sdk.core.error import WeltNewsError
+from projectname_sdk.core.result import WeltNewsResult
+from projectname_sdk.core.response import WeltNewsResponse
+from projectname_sdk.core.spec import WeltNewsSpec
+from projectname_sdk.feature.base_feature import WeltNewsBaseFeature
 
 
 def _client():

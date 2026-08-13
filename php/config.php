@@ -60,14 +60,14 @@ class WeltNewsConfig
             ],
             [
               'active' => true,
-              'name' => 'image_url',
+              'name' => 'imageUrl',
               'req' => false,
               'type' => '`$STRING`',
               'index$' => 4,
             ],
             [
               'active' => true,
-              'name' => 'published_at',
+              'name' => 'publishedAt',
               'req' => false,
               'type' => '`$STRING`',
               'index$' => 5,
@@ -96,6 +96,7 @@ class WeltNewsConfig
                 [
                   'active' => true,
                   'args' => [],
+                  'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/articles/home',
                   'parts' => [
@@ -107,7 +108,7 @@ class WeltNewsConfig
                   ],
                   'transform' => [
                     'req' => '`reqdata`',
-                    'res' => '`body`',
+                    'res' => '`body.articles`',
                   ],
                   'index$' => 0,
                 ],

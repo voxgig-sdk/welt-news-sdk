@@ -264,8 +264,8 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 | `"category"` |  |
 | `"description"` |  |
 | `"id"` |  |
-| `"image_url"` |  |
-| `"published_at"` |  |
+| `"imageUrl"` |  |
+| `"publishedAt"` |  |
 | `"title"` |  |
 | `"url"` |  |
 
@@ -296,8 +296,8 @@ Create an instance: `article := client.Article(nil)`
 | `category` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
 | `title` | `string` |  |
 | `url` | `string` |  |
 

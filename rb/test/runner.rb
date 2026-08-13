@@ -23,8 +23,8 @@ module WeltNewsTestRunner
   end
 
   def self.env_override(m)
-    live = getenv("WELTNEWS_TEST_LIVE")
-    override = getenv("WELTNEWS_TEST_OVERRIDE")
+    live = getenv("WELT_NEWS_TEST_LIVE")
+    override = getenv("WELT_NEWS_TEST_OVERRIDE")
 
     if live == "TRUE" || override == "TRUE"
       m.each_key do |key|
@@ -44,8 +44,8 @@ module WeltNewsTestRunner
       end
     end
 
-    explain = getenv("WELTNEWS_TEST_EXPLAIN")
-    m["WELTNEWS_TEST_EXPLAIN"] = explain if explain && !explain.empty?
+    explain = getenv("WELT_NEWS_TEST_EXPLAIN")
+    m["WELT_NEWS_TEST_EXPLAIN"] = explain if explain && !explain.empty?
 
     m
   end

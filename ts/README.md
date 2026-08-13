@@ -35,7 +35,9 @@ const client = new WeltNewsSDK()
 
 ### 2. List article records
 
-`list()` resolves to an array of Article objects — iterate it directly:
+`list()` resolves to an array of Article ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const articles = await client.Article().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = WeltNewsSDK.test()
 
 const article = await client.Article().list()
-// article is a bare entity populated with mock response data
+// article is the entity, populated with mock response data
+// — call article.data() for the record itself
 console.log(article)
 ```
 
@@ -288,8 +291,8 @@ The `prepare()` method returns:
 | `category` |  |
 | `description` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
 | `title` |  |
 | `url` |  |
 
@@ -320,8 +323,8 @@ Create an instance: `const article = client.Article()`
 | `category` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |
-| `image_url` | `string` |  |
-| `published_at` | `string` |  |
+| `imageUrl` | `string` |  |
+| `publishedAt` | `string` |  |
 | `title` | `string` |  |
 | `url` | `string` |  |
 

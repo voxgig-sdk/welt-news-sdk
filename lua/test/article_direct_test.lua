@@ -61,11 +61,11 @@ function article_direct_setup(mockres)
   local calls = {}
 
   local env = runner.env_override({
-    ["WELTNEWS_TEST_ARTICLE_ENTID"] = {},
-    ["WELTNEWS_TEST_LIVE"] = "FALSE",
+    ["WELT_NEWS_TEST_ARTICLE_ENTID"] = {},
+    ["WELT_NEWS_TEST_LIVE"] = "FALSE",
   })
 
-  local live = env["WELTNEWS_TEST_LIVE"] == "TRUE"
+  local live = env["WELT_NEWS_TEST_LIVE"] == "TRUE"
 
   if live then
     local merged_opts = {

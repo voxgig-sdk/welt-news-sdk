@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ WeltNewsUtility.registrar = ->(u) {
   u.prepare_params = WeltNewsUtilities::PrepareParams
   u.prepare_path = WeltNewsUtilities::PreparePath
   u.prepare_query = WeltNewsUtilities::PrepareQuery
+  u.graphql_body = WeltNewsUtilities::GraphqlBody
+  u.graphql_errors = WeltNewsUtilities::GraphqlErrors
   u.result_basic = WeltNewsUtilities::ResultBasic
   u.result_body = WeltNewsUtilities::ResultBody
   u.result_headers = WeltNewsUtilities::ResultHeaders

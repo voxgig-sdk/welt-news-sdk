@@ -6,8 +6,8 @@
         "category": "s51",
         "description": "s52",
         "id": "ARTICLE00",
-        "image_url": "s54",
-        "published_at": "s55",
+        "imageUrl": "s54",
+        "publishedAt": "s55",
         "title": "s56",
         "url": "s57"
       },
@@ -16,8 +16,8 @@
         "category": "sa1",
         "description": "sa2",
         "id": "ARTICLE01",
-        "image_url": "sa4",
-        "published_at": "sa5",
+        "imageUrl": "sa4",
+        "publishedAt": "sa5",
         "title": "sa6",
         "url": "sa7"
       },
@@ -26,8 +26,8 @@
         "category": "sf1",
         "description": "sf2",
         "id": "ARTICLE02",
-        "image_url": "sf4",
-        "published_at": "sf5",
+        "imageUrl": "sf4",
+        "publishedAt": "sf5",
         "title": "sf6",
         "url": "sf7"
       }
@@ -39,8 +39,8 @@
         "author": "s140",
         "category": "s141",
         "description": "s142",
-        "image_url": "s144",
-        "published_at": "s145",
+        "imageUrl": "s144",
+        "publishedAt": "s145",
         "title": "s146",
         "url": "s147"
       }

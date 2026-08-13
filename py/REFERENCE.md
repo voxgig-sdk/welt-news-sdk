@@ -91,8 +91,8 @@ article = client.Article()
 | `category` | `str` | No |  |
 | `description` | `str` | No |  |
 | `id` | `str` | No |  |
-| `image_url` | `str` | No |  |
-| `published_at` | `str` | No |  |
+| `imageUrl` | `str` | No |  |
+| `publishedAt` | `str` | No |  |
 | `title` | `str` | No |  |
 | `url` | `str` | No |  |
 

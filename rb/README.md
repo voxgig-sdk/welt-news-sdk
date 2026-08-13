@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = WeltNewsSDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 article = client.Article.list()
 puts article
 ```
@@ -240,8 +241,8 @@ returns a result `Hash` with these keys:
 | `category` |  |
 | `description` |  |
 | `id` |  |
-| `image_url` |  |
-| `published_at` |  |
+| `imageUrl` |  |
+| `publishedAt` |  |
 | `title` |  |
 | `url` |  |
 
@@ -272,8 +273,8 @@ Create an instance: `article = client.Article`
 | `category` | `String` |  |
 | `description` | `String` |  |
 | `id` | `String` |  |
-| `image_url` | `String` |  |
-| `published_at` | `String` |  |
+| `imageUrl` | `String` |  |
+| `publishedAt` | `String` |  |
 | `title` | `String` |  |
 | `url` | `String` |  |
 

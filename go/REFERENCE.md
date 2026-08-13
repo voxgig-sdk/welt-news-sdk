@@ -102,8 +102,8 @@ fmt.Println(article.GetName()) // "article"
 | `category` | `string` | No |  |
 | `description` | `string` | No |  |
 | `id` | `string` | No |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | No |  |
 | `title` | `string` | No |  |
 | `url` | `string` | No |  |
 

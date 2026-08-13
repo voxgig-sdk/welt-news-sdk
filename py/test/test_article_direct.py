@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from weltnews_sdk.utility.voxgig_struct import voxgig_struct as vs
 from weltnews_sdk import WeltNewsSDK
-from core import helpers
+from weltnews_sdk.core import helpers
 from test import runner
 
 
@@ -58,11 +58,11 @@ def _article_direct_setup(mockres):
     calls = []
 
     env = runner.env_override({
-        "WELTNEWS_TEST_ARTICLE_ENTID": {},
-        "WELTNEWS_TEST_LIVE": "FALSE",
+        "WELT_NEWS_TEST_ARTICLE_ENTID": {},
+        "WELT_NEWS_TEST_LIVE": "FALSE",
     })
 
-    live = env.get("WELTNEWS_TEST_LIVE") == "TRUE"
+    live = env.get("WELT_NEWS_TEST_LIVE") == "TRUE"
 
     if live:
         merged_opts = {

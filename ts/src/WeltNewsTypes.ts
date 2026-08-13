@@ -10,8 +10,8 @@ export interface Article {
   category?: string
   description?: string
   id?: string
-  image_url?: string
-  published_at?: string
+  imageUrl?: string
+  publishedAt?: string
   title?: string
   url?: string
 }
@@ -21,9 +21,15 @@ export interface ArticleListMatch {
   category?: string
   description?: string
   id?: string
-  image_url?: string
-  published_at?: string
+  imageUrl?: string
+  publishedAt?: string
   title?: string
   url?: string
+
+  // Selects a custom action instead of the plain list:
+  //   'home'
+  // The remaining keys are that action's own payload.
+  $action?: string
+  [action: string]: any
 }
 

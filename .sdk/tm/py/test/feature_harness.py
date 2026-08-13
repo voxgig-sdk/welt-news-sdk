@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import WeltNewsControl
-from core.error import WeltNewsError
-from core.result import WeltNewsResult
-from core.spec import WeltNewsSpec
+from projectname_sdk.config import make_config
+from projectname_sdk.features import _make_feature
+from projectname_sdk.core.control import WeltNewsControl
+from projectname_sdk.core.error import WeltNewsError
+from projectname_sdk.core.result import WeltNewsResult
+from projectname_sdk.core.spec import WeltNewsSpec
 
 
 # True when this SDK was generated with the named feature.

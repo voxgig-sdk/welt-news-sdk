@@ -72,7 +72,7 @@ class ArticleEntityTest extends TestCase
         // The basic flow consumes synthetic IDs from the fixture. In live mode
         // without an *_ENTID env override, those IDs hit the live API and 4xx.
         if (!empty($setup["synthetic_only"])) {
-            $this->markTestSkipped("live entity test uses synthetic IDs from fixture — set WELTNEWS_TEST_ARTICLE_ENTID JSON to run live");
+            $this->markTestSkipped("live entity test uses synthetic IDs from fixture — set WELT_NEWS_TEST_ARTICLE_ENTID JSON to run live");
             return;
         }
         $client = $setup["client"];
@@ -117,22 +117,22 @@ function article_basic_setup($extra)
     // Detect ENTID env override before envOverride consumes it. When live
     // mode is on without a real override, the basic test runs against synthetic
     // IDs from the fixture and 4xx's. Surface this so the test can skip.
-    $entid_env_raw = getenv("WELTNEWS_TEST_ARTICLE_ENTID");
+    $entid_env_raw = getenv("WELT_NEWS_TEST_ARTICLE_ENTID");
     $idmap_overridden = $entid_env_raw !== false && str_starts_with(trim($entid_env_raw), "{");
 
     $env = Runner::env_override([
-        "WELTNEWS_TEST_ARTICLE_ENTID" => $idmap,
-        "WELTNEWS_TEST_LIVE" => "FALSE",
-        "WELTNEWS_TEST_EXPLAIN" => "FALSE",
+        "WELT_NEWS_TEST_ARTICLE_ENTID" => $idmap,
+        "WELT_NEWS_TEST_LIVE" => "FALSE",
+        "WELT_NEWS_TEST_EXPLAIN" => "FALSE",
     ]);
 
     $idmap_resolved = Helpers::to_map(
-        $env["WELTNEWS_TEST_ARTICLE_ENTID"]);
+        $env["WELT_NEWS_TEST_ARTICLE_ENTID"]);
     if ($idmap_resolved === null) {
         $idmap_resolved = Helpers::to_map($idmap);
     }
 
-    if ($env["WELTNEWS_TEST_LIVE"] === "TRUE") {
+    if ($env["WELT_NEWS_TEST_LIVE"] === "TRUE") {
         $merged_opts = Vs::merge([
             [
             ],
@@ -141,13 +141,13 @@ function article_basic_setup($extra)
         $client = new WeltNewsSDK(Helpers::to_map($merged_opts));
     }
 
-    $live = $env["WELTNEWS_TEST_LIVE"] === "TRUE";
+    $live = $env["WELT_NEWS_TEST_LIVE"] === "TRUE";
     return [
         "client" => $client,
         "data" => $entity_data,
         "idmap" => $idmap_resolved,
         "env" => $env,
-        "explain" => $env["WELTNEWS_TEST_EXPLAIN"] === "TRUE",
+        "explain" => $env["WELT_NEWS_TEST_EXPLAIN"] === "TRUE",
         "live" => $live,
         "synthetic_only" => $live && !$idmap_overridden,
         "now" => (int)(microtime(true) * 1000),

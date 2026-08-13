@@ -120,10 +120,30 @@ const article = client.Article()
 | `category` | `string` | No |  |
 | `description` | `string` | No |  |
 | `id` | `string` | No |  |
-| `image_url` | `string` | No |  |
-| `published_at` | `string` | No |  |
+| `imageUrl` | `string` | No |  |
+| `publishedAt` | `string` | No |  |
 | `title` | `string` | No |  |
 | `url` | `string` | No |  |
+
+### Actions
+
+This entity exposes custom API actions in addition to the standard
+operations. Select one with `$action` in the call's argument; the
+remaining keys are sent as that action's payload.
+
+| Action | Route | Call |
+| --- | --- | --- |
+| `home` | `/articles/home` | `client.Article().list({ $action: 'home', ... })` |
+
+An action returns that action's OWN response, which is not necessarily a
+Article record — check the API definition for its shape.
+
+```ts
+const result = await client.Article().list({
+  $action: 'home',
+  /* ...the action's own arguments */
+})
+```
 
 ### Operations
 

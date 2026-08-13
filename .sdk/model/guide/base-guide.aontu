@@ -9,6 +9,7 @@ guide: {
     path: "/articles/home": {
       action: "home": {}
       op: list: method: *GET
+      op: list: transform: res: *("`body.articles`")|top
     }
   }
 

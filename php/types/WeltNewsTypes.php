@@ -19,8 +19,8 @@ class Article
     public ?string $category = null;
     public ?string $description = null;
     public ?string $id = null;
-    public ?string $image_url = null;
-    public ?string $published_at = null;
+    public ?string $imageUrl = null;
+    public ?string $publishedAt = null;
     public ?string $title = null;
     public ?string $url = null;
 }
@@ -32,8 +32,8 @@ class ArticleListMatch
     public ?string $category = null;
     public ?string $description = null;
     public ?string $id = null;
-    public ?string $image_url = null;
-    public ?string $published_at = null;
+    public ?string $imageUrl = null;
+    public ?string $publishedAt = null;
     public ?string $title = null;
     public ?string $url = null;
 }

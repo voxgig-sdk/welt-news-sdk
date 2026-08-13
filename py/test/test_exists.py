@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# WeltNews SDK exists test
 
 import pytest
 from weltnews_sdk import WeltNewsSDK
