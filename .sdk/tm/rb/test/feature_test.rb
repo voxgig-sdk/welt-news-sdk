@@ -15,7 +15,7 @@ require_relative "../WeltNews_sdk"
 module WeltNewsFeatureHarness
   # True when this SDK was generated with the named feature.
   def self.has_feature?(name)
-    f = WeltNewsConfig.make_config["feature"]
+    f = WeltNewsConfig.shared_config["feature"]
     f.is_a?(Hash) && !f[name].nil?
   end
 

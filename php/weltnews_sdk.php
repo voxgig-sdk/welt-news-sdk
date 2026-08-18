@@ -40,7 +40,7 @@ class WeltNewsSDK
         $utility = new WeltNewsUtility();
         $this->_utility = $utility;
 
-        $config = WeltNewsConfig::make_config();
+        $config = WeltNewsConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

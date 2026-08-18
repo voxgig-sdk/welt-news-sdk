@@ -40,7 +40,7 @@ class ArticleEntityTest extends TestCase
         $this->assertCount(3, $seen);
 
         // Inbound: streaming active -> yields each item from the feature.
-        $cfg = WeltNewsConfig::make_config();
+        $cfg = WeltNewsConfig::shared_config();
         if (isset($cfg["feature"]) && is_array($cfg["feature"]) && isset($cfg["feature"]["streaming"])) {
             $sdk = WeltNewsSDK::test($seed, ["feature" => ["streaming" => ["active" => true]]]);
             $got = [];

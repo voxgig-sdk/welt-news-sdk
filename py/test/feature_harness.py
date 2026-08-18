@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from weltnews_sdk.config import make_config
+from weltnews_sdk.config import shared_config
 from weltnews_sdk.features import _make_feature
 from weltnews_sdk.core.control import WeltNewsControl
 from weltnews_sdk.core.error import WeltNewsError
@@ -24,7 +24,7 @@ from weltnews_sdk.core.spec import WeltNewsSpec
 
 # True when this SDK was generated with the named feature.
 def has_feature(name):
-    feature = make_config().get("feature")
+    feature = shared_config().get("feature")
     return isinstance(feature, dict) and feature.get(name) is not None
 
 

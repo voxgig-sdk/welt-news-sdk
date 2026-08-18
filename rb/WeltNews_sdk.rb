@@ -28,7 +28,7 @@ class WeltNewsSDK
     utility = WeltNewsUtility.new
     @_utility = utility
 
-    config = WeltNewsConfig.make_config
+    config = WeltNewsConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,
