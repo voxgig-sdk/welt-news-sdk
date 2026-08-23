@@ -8,41 +8,49 @@ main: kit: entity: article: {
     {
       name: "author"
       req: false
+      short: "Article author name"
       type: "`$STRING`"
     }
     {
       name: "category"
       req: false
+      short: "Article category (e.g., politics, economy, culture, sports)"
       type: "`$STRING`"
     }
     {
       name: "description"
       req: false
+      short: "Brief summary of the article"
       type: "`$STRING`"
     }
     {
       name: "id"
       req: false
+      short: "Unique identifier for the article"
       type: "`$STRING`"
     }
     {
       name: "imageUrl"
       req: false
+      short: "URL to the article's main image"
       type: "`$STRING`"
     }
     {
       name: "publishedAt"
       req: false
+      short: "Publication timestamp"
       type: "`$STRING`"
     }
     {
       name: "title"
       req: false
+      short: "Article headline"
       type: "`$STRING`"
     }
     {
       name: "url"
       req: false
+      short: "URL to the full article"
       type: "`$STRING`"
     }
   ]

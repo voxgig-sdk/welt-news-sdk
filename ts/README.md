@@ -9,7 +9,7 @@ The API is exposed as capitalised, semantic **Entities** — e.g.
 instead of raw URL paths and query parameters. This keeps the surface
 predictable and low-friction for both humans and AI agents.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go`, `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb` — see
 > the [top-level README](../README.md).
 
 
@@ -287,14 +287,14 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `description` |  |
-| `id` |  |
-| `imageUrl` |  |
-| `publishedAt` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Article author name |
+| `category` | Article category (e.g., politics, economy, culture, sports) |
+| `description` | Brief summary of the article |
+| `id` | Unique identifier for the article |
+| `imageUrl` | URL to the article's main image |
+| `publishedAt` | Publication timestamp |
+| `title` | Article headline |
+| `url` | URL to the full article |
 
 Operations: list.
 
@@ -319,14 +319,14 @@ Create an instance: `const article = client.Article()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `imageUrl` | `string` |  |
-| `publishedAt` | `string` |  |
-| `title` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Article author name |
+| `category` | `string` | Article category (e.g., politics, economy, culture, sports) |
+| `description` | `string` | Brief summary of the article |
+| `id` | `string` | Unique identifier for the article |
+| `imageUrl` | `string` | URL to the article's main image |
+| `publishedAt` | `string` | Publication timestamp |
+| `title` | `string` | Article headline |
+| `url` | `string` | URL to the full article |
 
 #### Example: List
 

@@ -7,6 +7,9 @@ local function make_config()
   return {
     main = {
       name = "WeltNews",
+      slug = "welt-news",
+      version = "0.0.1",
+      target = "lua",
     },
     feature = {
       ["test"] = {
@@ -29,34 +32,42 @@ local function make_config()
         ["fields"] = {
           {
             ["name"] = "author",
+            ["short"] = "Article author name",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "category",
+            ["short"] = "Article category (e.g., politics, economy, culture, sports)",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "description",
+            ["short"] = "Brief summary of the article",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "id",
+            ["short"] = "Unique identifier for the article",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "imageUrl",
+            ["short"] = "URL to the article's main image",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "publishedAt",
+            ["short"] = "Publication timestamp",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "title",
+            ["short"] = "Article headline",
             ["type"] = "`$STRING`",
           },
           {
             ["name"] = "url",
+            ["short"] = "URL to the full article",
             ["type"] = "`$STRING`",
           },
         },

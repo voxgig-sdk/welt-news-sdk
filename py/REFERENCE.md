@@ -87,14 +87,14 @@ article = client.Article()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `author` | `str` | No |  |
-| `category` | `str` | No |  |
-| `description` | `str` | No |  |
-| `id` | `str` | No |  |
-| `imageUrl` | `str` | No |  |
-| `publishedAt` | `str` | No |  |
-| `title` | `str` | No |  |
-| `url` | `str` | No |  |
+| `author` | `str` | No | Article author name |
+| `category` | `str` | No | Article category (e.g., politics, economy, culture, sports) |
+| `description` | `str` | No | Brief summary of the article |
+| `id` | `str` | No | Unique identifier for the article |
+| `imageUrl` | `str` | No | URL to the article's main image |
+| `publishedAt` | `str` | No | Publication timestamp |
+| `title` | `str` | No | Article headline |
+| `url` | `str` | No | URL to the full article |
 
 ### Operations
 

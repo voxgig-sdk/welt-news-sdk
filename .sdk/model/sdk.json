@@ -36,48 +36,56 @@
               "active": true,
               "name": "author",
               "req": false,
+              "short": "Article author name",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "category",
               "req": false,
+              "short": "Article category (e.g., politics, economy, culture, sports)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "description",
               "req": false,
+              "short": "Brief summary of the article",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "id",
               "req": false,
+              "short": "Unique identifier for the article",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "imageUrl",
               "req": false,
+              "short": "URL to the article's main image",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "publishedAt",
               "req": false,
+              "short": "Publication timestamp",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "title",
               "req": false,
+              "short": "Article headline",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "url",
               "req": false,
+              "short": "URL to the full article",
               "type": "`$STRING`"
             }
           ],

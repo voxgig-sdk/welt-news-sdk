@@ -237,14 +237,14 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `author` |  |
-| `category` |  |
-| `description` |  |
-| `id` |  |
-| `imageUrl` |  |
-| `publishedAt` |  |
-| `title` |  |
-| `url` |  |
+| `author` | Article author name |
+| `category` | Article category (e.g., politics, economy, culture, sports) |
+| `description` | Brief summary of the article |
+| `id` | Unique identifier for the article |
+| `imageUrl` | URL to the article's main image |
+| `publishedAt` | Publication timestamp |
+| `title` | Article headline |
+| `url` | URL to the full article |
 
 Operations: List.
 
@@ -269,14 +269,14 @@ Create an instance: `article = client.Article`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `String` |  |
-| `category` | `String` |  |
-| `description` | `String` |  |
-| `id` | `String` |  |
-| `imageUrl` | `String` |  |
-| `publishedAt` | `String` |  |
-| `title` | `String` |  |
-| `url` | `String` |  |
+| `author` | `String` | Article author name |
+| `category` | `String` | Article category (e.g., politics, economy, culture, sports) |
+| `description` | `String` | Brief summary of the article |
+| `id` | `String` | Unique identifier for the article |
+| `imageUrl` | `String` | URL to the article's main image |
+| `publishedAt` | `String` | Publication timestamp |
+| `title` | `String` | Article headline |
+| `url` | `String` | URL to the full article |
 
 #### Example: List
 

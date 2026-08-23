@@ -6,7 +6,7 @@ The Golang SDK for the WeltNews API — an entity-oriented client using standard
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.Article(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,14 +260,14 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"author"` |  |
-| `"category"` |  |
-| `"description"` |  |
-| `"id"` |  |
-| `"imageUrl"` |  |
-| `"publishedAt"` |  |
-| `"title"` |  |
-| `"url"` |  |
+| `"author"` | Article author name |
+| `"category"` | Article category (e.g., politics, economy, culture, sports) |
+| `"description"` | Brief summary of the article |
+| `"id"` | Unique identifier for the article |
+| `"imageUrl"` | URL to the article's main image |
+| `"publishedAt"` | Publication timestamp |
+| `"title"` | Article headline |
+| `"url"` | URL to the full article |
 
 Operations: List.
 
@@ -292,14 +292,14 @@ Create an instance: `article := client.Article(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `author` | `string` |  |
-| `category` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `imageUrl` | `string` |  |
-| `publishedAt` | `string` |  |
-| `title` | `string` |  |
-| `url` | `string` |  |
+| `author` | `string` | Article author name |
+| `category` | `string` | Article category (e.g., politics, economy, culture, sports) |
+| `description` | `string` | Brief summary of the article |
+| `id` | `string` | Unique identifier for the article |
+| `imageUrl` | `string` | URL to the article's main image |
+| `publishedAt` | `string` | Publication timestamp |
+| `title` | `string` | Article headline |
+| `url` | `string` | URL to the full article |
 
 #### Example: List
 
