@@ -28,6 +28,7 @@ module WeltNewsConfig
           "options" => {
             "active" => false,
           },
+          "transport" => "base",
         },
       },
       "options" => {
