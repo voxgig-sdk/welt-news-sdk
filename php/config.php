@@ -78,11 +78,13 @@ class WeltNewsConfig
               'type' => '`$STRING`',
             ],
             [
+              'format' => 'uri',
               'name' => 'imageUrl',
               'short' => 'URL to the article\'s main image',
               'type' => '`$STRING`',
             ],
             [
+              'format' => 'date-time',
               'name' => 'publishedAt',
               'short' => 'Publication timestamp',
               'type' => '`$STRING`',
@@ -93,10 +95,15 @@ class WeltNewsConfig
               'type' => '`$STRING`',
             ],
             [
+              'format' => 'uri',
               'name' => 'url',
               'short' => 'URL to the full article',
               'type' => '`$STRING`',
             ],
+          ],
+          'id' => [
+            'field' => 'id',
+            'name' => 'id',
           ],
           'name' => 'article',
           'op' => [
@@ -109,9 +116,13 @@ class WeltNewsConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/articles/home',
-                  'parts' => [
-                    'articles',
-                    'home',
+                  'segments' => [
+                    [
+                      'lit' => 'articles',
+                    ],
+                    [
+                      'lit' => 'home',
+                    ],
                   ],
                   'select' => [
                     '$action' => 'home',
@@ -119,6 +130,10 @@ class WeltNewsConfig
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.articles`',
+                  ],
+                  'parts' => [
+                    'articles',
+                    'home',
                   ],
                 ],
               ],

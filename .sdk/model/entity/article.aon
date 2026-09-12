@@ -30,12 +30,14 @@ main: kit: entity: article: {
       type: "`$STRING`"
     }
     {
+      format: "uri"
       name: "imageUrl"
       req: false
       short: "URL to the article's main image"
       type: "`$STRING`"
     }
     {
+      format: "date-time"
       name: "publishedAt"
       req: false
       short: "Publication timestamp"
@@ -48,6 +50,7 @@ main: kit: entity: article: {
       type: "`$STRING`"
     }
     {
+      format: "uri"
       name: "url"
       req: false
       short: "URL to the full article"
@@ -68,9 +71,13 @@ main: kit: entity: article: {
         {
           method: "GET"
           orig: "/articles/home"
-          parts: [
-            "articles"
-            "home"
+          segments: [
+            {
+              lit: "articles"
+            }
+            {
+              lit: "home"
+            }
           ]
           select: {
             "$action": "home"
