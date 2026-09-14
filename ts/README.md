@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { WeltNewsSDK } from '@voxgig-sdk/welt-news'
+import { WeltNewsSDK } from '@voxgig-sdk/welt-news-sdk'
 
 const client = new WeltNewsSDK()
 ```
@@ -417,7 +417,7 @@ welt-news/
 Import the SDK from the package root:
 
 ```ts
-import { WeltNewsSDK } from '@voxgig-sdk/welt-news'
+import { WeltNewsSDK } from '@voxgig-sdk/welt-news-sdk'
 ```
 
 ### Entity state

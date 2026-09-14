@@ -105,7 +105,7 @@ local results, err = client:Article():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
+| TypeScript | `@voxgig-sdk/welt-news-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
 | Python | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
 | PHP | `voxgig-sdk/welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/welt-news-sdk/go` | `go get github.com/voxgig-sdk/welt-news-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:Article():list()
 ### TypeScript
 
 ```ts
-import { WeltNewsSDK } from '@voxgig-sdk/welt-news'
+import { WeltNewsSDK } from '@voxgig-sdk/welt-news-sdk'
 
 const client = new WeltNewsSDK()
 
