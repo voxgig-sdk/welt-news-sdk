@@ -1,12 +1,18 @@
 # WeltNews SDK feature factory
 
 from weltnews_sdk.feature.base_feature import WeltNewsBaseFeature
+from weltnews_sdk.feature.ratelimit_feature import WeltNewsRatelimitFeature
+from weltnews_sdk.feature.retry_feature import WeltNewsRetryFeature
 from weltnews_sdk.feature.test_feature import WeltNewsTestFeature
+from weltnews_sdk.feature.timeout_feature import WeltNewsTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: WeltNewsBaseFeature(),
+    "ratelimit": lambda: WeltNewsRatelimitFeature(),
+    "retry": lambda: WeltNewsRetryFeature(),
     "test": lambda: WeltNewsTestFeature(),
+    "timeout": lambda: WeltNewsTimeoutFeature(),
 }
 
 
