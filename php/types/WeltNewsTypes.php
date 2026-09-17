@@ -15,26 +15,10 @@ declare(strict_types=1);
 /** Article entity data model. */
 class Article
 {
-    public ?string $author = null;
-    public ?string $category = null;
-    public ?string $description = null;
-    public ?string $id = null;
-    public ?string $imageUrl = null;
-    public ?string $publishedAt = null;
-    public ?string $title = null;
-    public ?string $url = null;
 }
 
 /** Request payload for Article#list. */
 class ArticleListMatch
 {
-    public ?string $author = null;
-    public ?string $category = null;
-    public ?string $description = null;
-    public ?string $id = null;
-    public ?string $imageUrl = null;
-    public ?string $publishedAt = null;
-    public ?string $title = null;
-    public ?string $url = null;
 }
 

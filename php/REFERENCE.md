@@ -88,19 +88,6 @@ Prepare a fetch definition without sending the request. Returns the
 $article = $client->Article();
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `author` | `string` | No | Article author name |
-| `category` | `string` | No | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `string` | No | Brief summary of the article |
-| `id` | `string` | No | Unique identifier for the article |
-| `imageUrl` | `string` | No | URL to the article's main image |
-| `publishedAt` | `string` | No | Publication timestamp |
-| `title` | `string` | No | Article headline |
-| `url` | `string` | No | URL to the full article |
-
 ### Operations
 
 #### `list(?array $reqmatch = null, ?array $ctrl = null): mixed`

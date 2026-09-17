@@ -260,14 +260,6 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"author"` | Article author name |
-| `"category"` | Article category (e.g., politics, economy, culture, sports) |
-| `"description"` | Brief summary of the article |
-| `"id"` | Unique identifier for the article |
-| `"imageUrl"` | URL to the article's main image |
-| `"publishedAt"` | Publication timestamp |
-| `"title"` | Article headline |
-| `"url"` | URL to the full article |
 
 Operations: List.
 
@@ -287,19 +279,6 @@ Create an instance: `article := client.Article(nil)`
 | Method | Description |
 | --- | --- |
 | `List(match, ctrl)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `author` | `string` | Article author name |
-| `category` | `string` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `string` | Brief summary of the article |
-| `id` | `string` | Unique identifier for the article |
-| `imageUrl` | `string` | URL to the article's main image |
-| `publishedAt` | `string` | Publication timestamp |
-| `title` | `string` | Article headline |
-| `url` | `string` | URL to the full article |
 
 #### Example: List
 

@@ -9,76 +9,10 @@
 # annotations document the shapes. Do not edit by hand.
 
 # Article entity data model.
-#
-# @!attribute [rw] author
-#   @return [String, nil]
-#
-# @!attribute [rw] category
-#   @return [String, nil]
-#
-# @!attribute [rw] description
-#   @return [String, nil]
-#
-# @!attribute [rw] id
-#   @return [String, nil]
-#
-# @!attribute [rw] imageUrl
-#   @return [String, nil]
-#
-# @!attribute [rw] publishedAt
-#   @return [String, nil]
-#
-# @!attribute [rw] title
-#   @return [String, nil]
-#
-# @!attribute [rw] url
-#   @return [String, nil]
-Article = Struct.new(
-  :author,
-  :category,
-  :description,
-  :id,
-  :imageUrl,
-  :publishedAt,
-  :title,
-  :url,
-  keyword_init: true
-)
+class Article
+end
 
 # Request payload for Article#list.
-#
-# @!attribute [rw] author
-#   @return [String, nil]
-#
-# @!attribute [rw] category
-#   @return [String, nil]
-#
-# @!attribute [rw] description
-#   @return [String, nil]
-#
-# @!attribute [rw] id
-#   @return [String, nil]
-#
-# @!attribute [rw] imageUrl
-#   @return [String, nil]
-#
-# @!attribute [rw] publishedAt
-#   @return [String, nil]
-#
-# @!attribute [rw] title
-#   @return [String, nil]
-#
-# @!attribute [rw] url
-#   @return [String, nil]
-ArticleListMatch = Struct.new(
-  :author,
-  :category,
-  :description,
-  :id,
-  :imageUrl,
-  :publishedAt,
-  :title,
-  :url,
-  keyword_init: true
-)
+class ArticleListMatch
+end
 

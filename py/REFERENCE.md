@@ -83,19 +83,6 @@ Prepare a fetch definition without sending. Returns the `fetchdef` and raises on
 article = client.Article()
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `author` | `str` | No | Article author name |
-| `category` | `str` | No | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `str` | No | Brief summary of the article |
-| `id` | `str` | No | Unique identifier for the article |
-| `imageUrl` | `str` | No | URL to the article's main image |
-| `publishedAt` | `str` | No | Publication timestamp |
-| `title` | `str` | No | Article headline |
-| `url` | `str` | No | URL to the full article |
-
 ### Operations
 
 #### `list(reqmatch=None, ctrl=None) -> list`

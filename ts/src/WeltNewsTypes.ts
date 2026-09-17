@@ -6,25 +6,9 @@
 // @voxgig/apidef VALID_CANON). Do not edit by hand.
 
 export interface Article {
-  author?: string
-  category?: string
-  description?: string
-  id?: string
-  imageUrl?: string
-  publishedAt?: string
-  title?: string
-  url?: string
 }
 
 export interface ArticleListMatch {
-  author?: string
-  category?: string
-  description?: string
-  id?: string
-  imageUrl?: string
-  publishedAt?: string
-  title?: string
-  url?: string
 
   // Selects a custom action instead of the plain list:
   //   'home'

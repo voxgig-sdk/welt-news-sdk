@@ -43,7 +43,7 @@ local articles, err = client:Article():list()
 if err then error(err) end
 
 for _, item in ipairs(articles) do
-  print(item["id"], item["author"])
+  print(item)
 end
 ```
 
@@ -231,14 +231,6 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `author` | Article author name |
-| `category` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | Brief summary of the article |
-| `id` | Unique identifier for the article |
-| `imageUrl` | URL to the article's main image |
-| `publishedAt` | Publication timestamp |
-| `title` | Article headline |
-| `url` | URL to the full article |
 
 Operations: List.
 
@@ -258,19 +250,6 @@ Create an instance: `local article = client:Article(nil)`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `author` | `string` | Article author name |
-| `category` | `string` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `string` | Brief summary of the article |
-| `id` | `string` | Unique identifier for the article |
-| `imageUrl` | `string` | URL to the article's main image |
-| `publishedAt` | `string` | Publication timestamp |
-| `title` | `string` | Article headline |
-| `url` | `string` | URL to the full article |
 
 #### Example: List
 
@@ -421,6 +400,7 @@ Use `helpers.to_map()` to safely validate that a value is a table.
 lua/
 ├── welt-news_sdk.lua    -- Main SDK module
 ├── config.lua               -- Configuration
+├── schema.lua               -- Generated option + entity specs
 ├── features.lua             -- Feature factory
 ├── core/                    -- Core types and context
 ├── entity/                  -- Entity implementations

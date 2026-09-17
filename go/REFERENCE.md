@@ -94,19 +94,6 @@ article := client.Article(nil)
 fmt.Println(article.GetName()) // "article"
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `author` | `string` | No | Article author name |
-| `category` | `string` | No | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `string` | No | Brief summary of the article |
-| `id` | `string` | No | Unique identifier for the article |
-| `imageUrl` | `string` | No | URL to the article's main image |
-| `publishedAt` | `string` | No | Publication timestamp |
-| `title` | `string` | No | Article headline |
-| `url` | `string` | No | URL to the full article |
-
 ### Operations
 
 #### `List(reqmatch, ctrl map[string]any) (any, error)`

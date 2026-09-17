@@ -37,7 +37,7 @@ begin
   # list returns an Array of Article records — iterate directly.
   articles = client.Article.list
   articles.each do |item|
-    puts "#{item["id"]} #{item["author"]}"
+    puts "#{item}"
   end
 rescue => err
   warn "list failed: #{err}"
@@ -237,14 +237,6 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `author` | Article author name |
-| `category` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | Brief summary of the article |
-| `id` | Unique identifier for the article |
-| `imageUrl` | URL to the article's main image |
-| `publishedAt` | Publication timestamp |
-| `title` | Article headline |
-| `url` | URL to the full article |
 
 Operations: List.
 
@@ -264,19 +256,6 @@ Create an instance: `article = client.Article`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `author` | `String` | Article author name |
-| `category` | `String` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `String` | Brief summary of the article |
-| `id` | `String` | Unique identifier for the article |
-| `imageUrl` | `String` | URL to the article's main image |
-| `publishedAt` | `String` | Publication timestamp |
-| `title` | `String` | Article headline |
-| `url` | `String` | URL to the full article |
 
 #### Example: List
 
@@ -428,6 +407,7 @@ Use `Helpers.to_map()` to safely validate that a value is a hash.
 rb/
 ├── WeltNews_sdk.rb       -- Main SDK module
 ├── config.rb                  -- Configuration
+├── schema.rb                  -- Generated option + entity specs
 ├── features.rb                -- Feature factory
 ├── core/                      -- Core types and context
 ├── entity/                    -- Entity implementations

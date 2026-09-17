@@ -1,49 +1,14 @@
 {
   "existing": {
     "article": {
-      "ARTICLE00": {
-        "author": "s50",
-        "category": "s51",
-        "description": "s52",
-        "id": "ARTICLE00",
-        "imageUrl": "s54",
-        "publishedAt": "s55",
-        "title": "s56",
-        "url": "s57"
-      },
-      "ARTICLE01": {
-        "author": "sa0",
-        "category": "sa1",
-        "description": "sa2",
-        "id": "ARTICLE01",
-        "imageUrl": "sa4",
-        "publishedAt": "sa5",
-        "title": "sa6",
-        "url": "sa7"
-      },
-      "ARTICLE02": {
-        "author": "sf0",
-        "category": "sf1",
-        "description": "sf2",
-        "id": "ARTICLE02",
-        "imageUrl": "sf4",
-        "publishedAt": "sf5",
-        "title": "sf6",
-        "url": "sf7"
-      }
+      "ARTICLE00": {},
+      "ARTICLE01": {},
+      "ARTICLE02": {}
     }
   },
   "new": {
     "article": {
-      "article_ref01": {
-        "author": "s140",
-        "category": "s141",
-        "description": "s142",
-        "imageUrl": "s144",
-        "publishedAt": "s145",
-        "title": "s146",
-        "url": "s147"
-      }
+      "article_ref01": {}
     }
   },
   "requests": {

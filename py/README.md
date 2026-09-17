@@ -243,14 +243,6 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `author` | Article author name |
-| `category` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | Brief summary of the article |
-| `id` | Unique identifier for the article |
-| `imageUrl` | URL to the article's main image |
-| `publishedAt` | Publication timestamp |
-| `title` | Article headline |
-| `url` | URL to the full article |
 
 Operations: List.
 
@@ -270,19 +262,6 @@ Create an instance: `article = client.Article()`
 | Method | Description |
 | --- | --- |
 | `list()` | List entities, optionally matching the given criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `author` | `str` | Article author name |
-| `category` | `str` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `str` | Brief summary of the article |
-| `id` | `str` | Unique identifier for the article |
-| `imageUrl` | `str` | URL to the article's main image |
-| `publishedAt` | `str` | Publication timestamp |
-| `title` | `str` | Article headline |
-| `url` | `str` | URL to the full article |
 
 #### Example: List
 
@@ -433,6 +412,7 @@ Use `helpers.to_map()` to safely validate that a value is a dict.
 py/
 ├── weltnews_sdk.py         -- Main SDK module
 ├── config.py                    -- Configuration
+├── schema.py                    -- Generated option + entity specs
 ├── features.py                  -- Feature factory
 ├── core/                        -- Core types and context
 ├── entity/                      -- Entity implementations

@@ -88,55 +88,7 @@ func MakeConfig() map[string]any {
 		},
 		"entity": map[string]any{
 			"article": map[string]any{
-				"fields": []any{
-					map[string]any{
-						"name": "author",
-						"short": "Article author name",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "category",
-						"short": "Article category (e.g., politics, economy, culture, sports)",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "description",
-						"short": "Brief summary of the article",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "id",
-						"short": "Unique identifier for the article",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"format": "uri",
-						"name": "imageUrl",
-						"short": "URL to the article's main image",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"format": "date-time",
-						"name": "publishedAt",
-						"short": "Publication timestamp",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "title",
-						"short": "Article headline",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"format": "uri",
-						"name": "url",
-						"short": "URL to the full article",
-						"type": "`$STRING`",
-					},
-				},
-				"id": map[string]any{
-					"field": "id",
-					"name": "id",
-				},
+				"fields": []any{},
 				"name": "article",
 				"op": map[string]any{
 					"list": map[string]any{

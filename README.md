@@ -105,12 +105,12 @@ local results, err = client:Article():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/welt-news-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
-| Python | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
-| PHP | `voxgig-sdk/welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
+| TypeScript | `@voxgig-sdk/welt-news-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/tags) |
+| Python | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/tags) |
+| PHP | `voxgig-sdk/welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/welt-news-sdk/go` | `go get github.com/voxgig-sdk/welt-news-sdk/go@latest` |
-| Ruby | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
-| Lua | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/releases) |
+| Ruby | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/tags) |
+| Lua | `voxgig-sdk-welt-news` | publish pending — [install from git tag](https://github.com/voxgig-sdk/welt-news-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/welt-news-sdk/go-cli` | `go install github.com/voxgig-sdk/welt-news-sdk/go-cli/cmd/welt-news@latest` |
 | Go MCP server | `github.com/voxgig-sdk/welt-news-sdk/go-mcp` | `go get github.com/voxgig-sdk/welt-news-sdk/go-mcp@latest` |
 

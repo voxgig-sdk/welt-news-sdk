@@ -89,19 +89,6 @@ same parameters as `direct()`. Raises on error.
 article = client.Article
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `author` | `String` | No | Article author name |
-| `category` | `String` | No | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `String` | No | Brief summary of the article |
-| `id` | `String` | No | Unique identifier for the article |
-| `imageUrl` | `String` | No | URL to the article's main image |
-| `publishedAt` | `String` | No | Publication timestamp |
-| `title` | `String` | No | Article headline |
-| `url` | `String` | No | URL to the full article |
-
 ### Operations
 
 #### `list(reqmatch = nil, ctrl = nil) -> Array`

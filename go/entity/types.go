@@ -14,26 +14,10 @@ import (
 
 // Article is the typed data model for the article entity.
 type Article struct {
-	Author *string `json:"author,omitempty"`
-	Category *string `json:"category,omitempty"`
-	Description *string `json:"description,omitempty"`
-	Id *string `json:"id,omitempty"`
-	ImageUrl *string `json:"imageUrl,omitempty"`
-	PublishedAt *string `json:"publishedAt,omitempty"`
-	Title *string `json:"title,omitempty"`
-	Url *string `json:"url,omitempty"`
 }
 
 // ArticleListMatch is the typed request payload for Article.ListTyped.
 type ArticleListMatch struct {
-	Author *string `json:"author,omitempty"`
-	Category *string `json:"category,omitempty"`
-	Description *string `json:"description,omitempty"`
-	Id *string `json:"id,omitempty"`
-	ImageUrl *string `json:"imageUrl,omitempty"`
-	PublishedAt *string `json:"publishedAt,omitempty"`
-	Title *string `json:"title,omitempty"`
-	Url *string `json:"url,omitempty"`
 }
 
 // asMap turns a typed request/data struct into the map[string]any the

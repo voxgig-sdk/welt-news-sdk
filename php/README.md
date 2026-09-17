@@ -39,7 +39,7 @@ try {
     $articles = $client->Article()->list();
     foreach ($articles as $record) {
         $item = $record->data_get();
-        echo $item["id"] . " " . $item["author"] . "\n";
+        echo json_encode($item) . "\n";
     }
 } catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
@@ -248,14 +248,6 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `author` | Article author name |
-| `category` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | Brief summary of the article |
-| `id` | Unique identifier for the article |
-| `imageUrl` | URL to the article's main image |
-| `publishedAt` | Publication timestamp |
-| `title` | Article headline |
-| `url` | URL to the full article |
 
 Operations: List.
 
@@ -275,19 +267,6 @@ Create an instance: `$article = $client->Article();`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `author` | `string` | Article author name |
-| `category` | `string` | Article category (e.g., politics, economy, culture, sports) |
-| `description` | `string` | Brief summary of the article |
-| `id` | `string` | Unique identifier for the article |
-| `imageUrl` | `string` | URL to the article's main image |
-| `publishedAt` | `string` | Publication timestamp |
-| `title` | `string` | Article headline |
-| `url` | `string` | URL to the full article |
 
 #### Example: List
 
@@ -439,6 +418,7 @@ Use `Helpers::to_map()` to safely validate that a value is an array.
 php/
 ├── weltnews_sdk.php          -- Main SDK class
 ├── config.php                     -- Configuration
+├── schema.php                     -- Generated option + entity specs
 ├── features.php                   -- Feature factory
 ├── core/                          -- Core types and context
 ├── entity/                        -- Entity implementations
