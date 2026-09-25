@@ -19,7 +19,6 @@ import type {
   ArticleListMatch,
 } from '../WeltNewsTypes'
 
-// TODO: needs Entity superclass
 class ArticleEntity extends WeltNewsEntityBase<Article> {
 
   constructor(client: WeltNewsSDK, entopts: any) {

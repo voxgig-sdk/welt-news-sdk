@@ -1,0 +1,45 @@
+# Entity: article
+
+main: kit: entity: article: {
+
+  alias: field: {}
+
+  name: "article"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /articles/home"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/articles/home"
+          q: {
+            "$action": "home"
+          }
+          s: [
+            {
+              lit: "articles"
+            }
+            {
+              lit: "home"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.articles`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

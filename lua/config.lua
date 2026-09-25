@@ -92,7 +92,6 @@ local function make_config()
             ["name"] = "list",
             ["points"] = {
               {
-                ["args"] = {},
                 ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/articles/home",
@@ -104,16 +103,18 @@ local function make_config()
                     ["lit"] = "home",
                   },
                 },
-                ["select"] = {
-                  ["$action"] = "home",
+                ["parts"] = {
+                  "articles",
+                  "home",
                 },
+                ["rename"] = {},
                 ["transform"] = {
                   ["req"] = "`reqdata`",
                   ["res"] = "`body.articles`",
                 },
-                ["parts"] = {
-                  "articles",
-                  "home",
+                ["args"] = {},
+                ["select"] = {
+                  ["$action"] = "home",
                 },
               },
             },

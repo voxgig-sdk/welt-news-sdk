@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ArticleEntity = void 0;
 const WeltNewsEntityBase_1 = require("../WeltNewsEntityBase");
-// TODO: needs Entity superclass
 class ArticleEntity extends WeltNewsEntityBase_1.WeltNewsEntityBase {
     constructor(client, entopts) {
         super(client, entopts);

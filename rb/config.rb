@@ -104,7 +104,6 @@ module WeltNewsConfig
               "name" => "list",
               "points" => [
                 {
-                  "args" => {},
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/articles/home",
@@ -116,17 +115,19 @@ module WeltNewsConfig
                       "lit" => "home",
                     },
                   ],
-                  "select" => {
-                    "$action" => "home",
-                  },
-                  "transform" => {
-                    "req" => "`reqdata`",
-                    "res" => "`body.articles`",
-                  },
                   "parts" => [
                     "articles",
                     "home",
                   ],
+                  "rename" => {},
+                  "transform" => {
+                    "req" => "`reqdata`",
+                    "res" => "`body.articles`",
+                  },
+                  "args" => {},
+                  "select" => {
+                    "$action" => "home",
+                  },
                 },
               ],
             },
